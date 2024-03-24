@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-beige: #E0D8C7;
+  --color-sky-blue: #8EB9BE;
+  --font-title: "Cinzel", serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;  
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-roboto);
+  letter-spacing: 1px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a, button, li, input, textarea {
+  outline: none;
+}

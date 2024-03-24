@@ -1,0 +1,28 @@
+.swiper {
+    width: 100%;
+    height: 100svh;    
+    color: black;
+    font-size: 5rem;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.char {
+    display: inline-block;
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+
+.swiperHero-spinners {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-100%);   
+    display: flex;
+    gap: .8rem;
+}

@@ -1,0 +1,33 @@
+.spinnerLoad {   
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;        
+    border: 2px solid aqua;
+    display: grid;
+    place-content: center;
+    animation: load 1s linear;
+    animation-fill-mode: both;
+}
+
+.spinnerLoad-bar {
+    display: block;    
+    border-radius: 50%;
+    width: 18px;
+    height: 18px; 
+    /* border-left: 2px solid aqua; */    
+}
+
+@keyframes load {
+    0% {
+        clip-path: polygon(0 100%, 50% 100%, 50% 100%, 20% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 100%, 50% 100%, 50% 100%, 50% 0, 0 0);
+    }    
+    75% {
+        clip-path: polygon(0 100%, 50% 100%, 70% 71%, 100% 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 100%, 50% 100%, 100% 81%, 100% 0, 0 0);
+    }
+}
