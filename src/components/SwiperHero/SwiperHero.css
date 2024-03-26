@@ -26,3 +26,20 @@
     display: flex;
     gap: .8rem;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    top: 90%;
+    color: var(--color-beige);    
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 1.5rem;
+}
+
+.swiper-button-next {
+    left: 6rem;
+}
+
+.swiper-button-prev {
+    left: 3rem;
+}

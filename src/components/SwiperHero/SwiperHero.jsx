@@ -38,10 +38,10 @@ const SwiperHero = () => {
                     <SwiperBoxHero image={info.image} titlePart1={info.titlePart1} titlePart2={info.titlePart2} />
                 </SwiperSlide>
             ))} 
-            <div className="swiperHero-spinners">
+            {/* <div className="swiperHero-spinners">
                 <SpinnerLoad/>                       
                 <SpinnerLoad/>                       
-            </div>
+            </div> */}
         </Swiper>
         </>
     );
