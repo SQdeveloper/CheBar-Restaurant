@@ -1,0 +1,68 @@
+.cardMenu {
+    text-align: center;
+    background-color: var(--color-purple);
+    padding: 3rem 3rem;
+}
+
+.cardMenu-title {
+    color: var(--color-mostasa);
+    font-size: 3.2rem;
+    font-family: var(--font-dancing);    
+    text-transform: capitalize;
+}
+
+.cardMenu-subtitle {
+    font-family: var(--font-dancing);    
+    font-size: 1.5rem;    
+    font-weight: bold;
+}
+
+.groupMenu {    
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.groupMenu-option {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: .7rem;
+}
+
+.groupMenu-option-separator {
+    border-style: dotted;
+    flex: 1;
+    border-color: var(--color-sky-blue);
+    border-bottom-width: 1px;    
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;    
+}
+
+.groupMenu-option span, .groupMenu-option-price {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--font-museo);
+}
+
+.groupMenu-option-price {
+    background-color: var(--color-mostasa);
+    border-radius: .5rem;
+    padding: .3rem .5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.groupMenu-options {
+    display: flex;
+    flex-direction: column;    
+    gap: 1.1rem;
+    margin-top: 2.5rem;
+}
+
+.cardMenu-content-groups {
+    display: flex;
+    flex-direction: column;     
+}

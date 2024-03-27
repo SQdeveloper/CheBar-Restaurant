@@ -1,0 +1,12 @@
+.plate-animation {    
+    height: 25rem;
+    width: 25rem;
+    animation: rotate 3s;    
+    animation-timeline: view();    
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

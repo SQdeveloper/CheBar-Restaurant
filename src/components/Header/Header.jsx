@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <header className='header-main'>
             <Menu/>
-            <Link to=''><img className='header-main-logo' src="/images/logo/Logo.png" alt="logo" /></Link>
+            <Link to='/'><img className='header-main-logo' src="/images/logo/Logo.png" alt="logo" /></Link>
             <button onClick={openMenu} className='header-main-btn-menu'>                
                 <span className='header-main-btn-menu-line'></span>
                 <span className='header-main-btn-menu-line'></span>                
