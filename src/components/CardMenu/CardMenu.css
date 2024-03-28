@@ -9,6 +9,7 @@
     font-size: 3.2rem;
     font-family: var(--font-dancing);    
     text-transform: capitalize;
+    margin-bottom: 1rem;
 }
 
 .cardMenu-subtitle {
