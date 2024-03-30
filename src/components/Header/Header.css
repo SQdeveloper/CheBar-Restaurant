@@ -31,7 +31,7 @@
 
 .header-main-redes {
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
     justify-content: center;
 }
 

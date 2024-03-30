@@ -1,0 +1,123 @@
+.footer {    
+    background-color: rgb(22,22,22);
+    color: white;
+    position: relative;
+    padding: 6rem 3rem;
+    display: grid;
+    place-content: center;
+}
+
+.footer-bg {
+    filter:invert(80%);
+    height: 12rem;
+}
+
+.footer-content {    
+    height: 100%;
+    position: absolute;    
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 3rem;
+    width: 100%;        
+    align-items: center;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;  
+    text-align: start;  
+}
+
+.footer-group-title {
+    color: var(--color-sky-blue);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-bottom: 1.2rem;
+    display: block;
+    width: fit-content;
+}
+
+.footer ul li {
+    font-family: var(--font-roboto);
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+}
+
+.footer ul li a {
+    color: white;
+    transition: color .3s;
+}
+
+.footer ul li a:hover {
+    color: var(--color-sky-blue);
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;;
+}
+
+.footer-group:nth-child(1) {
+    margin-right: 3rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-group-country {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.1rem;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+}
+
+.footer-group:nth-child(1) img {
+    width: 11rem;
+    height: 11rem;
+}
+
+.footer-group:last-child {    
+    width: 100%;    
+    align-items: end;
+}
+
+.footer-group svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.footer-group .footer-group-contRed {
+    flex-direction: row;
+}
+
+.footer-group-red {
+    filter:invert(100%);                
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-group-contRed li a {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;    
+    padding: .8rem;    
+    transition: background-color .3s;
+    border: 1px solid white;
+}
+
+.footer-group-contRed a:hover {
+    background-color: var(--color-sky-blue);
+}
+
+.footer-group-build {   
+    width: 10rem;
+    margin: 1.3rem 0;
+}
