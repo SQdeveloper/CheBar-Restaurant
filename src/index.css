@@ -65,3 +65,19 @@ a, button, li, input, textarea {
 summary {
   list-style: none;  
 }
+
+.button-style {
+  background-color: var(--color-sky-blue);
+  color: white;
+  padding: 1.1rem 1.2rem;
+  border-radius: 2rem;
+  text-transform: capitalize; 
+  width: fit-content;
+  display: flex;
+  gap: .5rem;
+  transition: background-color .5s;
+}
+
+.button-style:hover {
+  background-color: var(--color-blue);
+}

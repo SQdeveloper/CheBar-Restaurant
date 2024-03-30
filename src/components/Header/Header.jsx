@@ -18,13 +18,14 @@ const Header = () => {
     }
 
     return (
+        <>
+        <Menu/> 
+        <button onClick={openMenu} className='header-main-btn-menu'>                
+            <span className='header-main-btn-menu-line'></span>
+            <span className='header-main-btn-menu-line'></span>                
+        </button>
         <header className='header-main'>
-            <Menu/>
             <Link to='/'><img className='header-main-logo' src="/images/logo/Logo.png" alt="logo" /></Link>
-            <button onClick={openMenu} className='header-main-btn-menu'>                
-                <span className='header-main-btn-menu-line'></span>
-                <span className='header-main-btn-menu-line'></span>                
-            </button>
             <div className="header-main-redes">
                 <a href="">
                     <img src="/images/redes/facebook.svg" alt="facebook" />                        
@@ -34,6 +35,7 @@ const Header = () => {
                 </a>
             </div>
         </header>
+        </>
     );
 };
 

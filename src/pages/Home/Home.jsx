@@ -3,18 +3,19 @@ import SwiperHero from '../../components/SwiperHero/SwiperHero';
 import PlateAnimation from '../../components/PlateAnimation/PlateAnimation';
 import CardMenu from '../../components/CardMenu/CardMenu';
 import data from '../../DB/data';
+import SliderBottom from '../../components/SliderBottom/SliderBottom';
 import './Home.css';
 
 const Home = () => {    
     return (
-        <div className='home'>
+        <div className='home'>        
           <SwiperHero/>     
           <div className="home-info">
             <section className="home-info-content">
               <span className='subtitle'>about che bar</span>  
               <h2 className='home-info-title title'>Che Bar — Where the flavor of Buenos Aires meets the attitude of the Caribbean!</h2>
               <p className='home-info-paragraph'>"Listen up, amigos! We’re the spice in your Aruban beach life and the kick in your cocktail. No messing around; we’re Argentinian and we don’t do bland."</p>
-              <a className='home-info-ancle' href="">
+              <a className='home-info-ancle button-style' href="">
                 <img src="/images/redes/whatsapp.svg" alt="whatsapp" />
                 whatsapp chat
               </a>
@@ -81,8 +82,68 @@ const Home = () => {
                 <CardMenu data={data[4]}/>
               </details>
             </div>
+            <button className='button-style'>WhatsApp Chat</button>
+            <button className='button-style'>
+              <svg aria-hidden="true" class="e-font-icon-svg e-far-arrow-alt-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"></path></svg>
+              View Menu
+            </button>
           </section>
-        </div>
+
+          <section className="home-contentSwiper">
+            <h2>Happy hour daily 4$ on select items from 5-11pm</h2>            
+            <div className="home-swiper">
+              <div className="home-slider">                
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Che-Bar-1-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu235-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Chebar.jpeg" alt="" /></div>                                              
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu2-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/233-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu-Chebar-768x768.jpeg" alt="" />
+                  </div>                              
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/B-768x768.jpeg" alt="" />
+                  </div>                              
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Che-Bar-1-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu235-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Chebar.jpeg" alt="" /></div>                                              
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu2-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/233-768x768.jpeg" alt="" />
+                  </div>
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/Menu-Chebar-768x768.jpeg" alt="" />
+                  </div>                              
+                  <div className="home-slider-box">
+                    <img src="https://chebararuba.com/wp-content/uploads/2024/01/B-768x768.jpeg" alt="" />
+                  </div>                              
+              </div>
+            </div>
+          </section>
+          <div className="home-vibes">
+            <img src="/images/details/vibes.png" alt="" />
+          </div>
+          <div className="home-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.1128753776047!2d-70.0460909261967!3d12.57480822345606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85380432ece79d%3A0xc3f6b588c0643141!2zQ2jDqSBCYXI!5e0!3m2!1ses-419!2spe!4v1711763588174!5m2!1ses-419!2spe" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <SliderBottom/>
+        </div>        
     );
 };
 

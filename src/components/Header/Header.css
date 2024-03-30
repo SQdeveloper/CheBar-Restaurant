@@ -47,8 +47,8 @@
 }
 
 .header-main-btn-menu {
-    position: absolute;
-    top:50%;
+    position: fixed;
+    top: 3.9rem;
     left: 50%;
     display: flex;
     flex-direction: column;
