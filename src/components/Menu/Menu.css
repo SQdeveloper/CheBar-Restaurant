@@ -18,6 +18,12 @@
     transition-delay: .3s;
 }
 
+@keyframes begin {
+    100% {
+        
+    }
+}
+
 .menu.active {
     transform: none;
 }
@@ -94,10 +100,7 @@
     border: 2px solid var(--color-sky-blue);
     border-radius: 50%;
     height: 19rem;
-    width: 19rem;
-    /* opacity: 0;
-    transition: opacity .8s;
-    transition-delay: .8s; */
+    width: 19rem;    
     animation: disappearLogotipo .5s ease-out;
     animation-fill-mode: both;
 }
@@ -108,7 +111,6 @@
     animation-fill-mode: both;
 }
 
-/* ANIMACION SIN UTILIZAR AÚN */
 @keyframes appearLogotipo {
     0% {
         opacity: 0;        

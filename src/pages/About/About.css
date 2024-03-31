@@ -1,0 +1,107 @@
+.about {
+    background-color: #F7F7F7;
+}
+
+.about-first-content {
+    background-color: white;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 7rem 4rem;
+}
+
+.about-first-content .title {
+    color: var(--color-blue);
+    font-size: 4rem;
+}
+
+.about-first-content p {
+    font-family: var(--font-museo);
+    font-size: 1.1rem;
+}
+
+.about-second-content {
+    display: flex;
+    gap: 3rem;
+    padding: 5rem 5rem;
+    width: 100%;
+}
+
+.about-second-content-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    text-align: center;
+    transition: scale .4s;
+}
+
+.about-second-content-link:hover {
+    scale: .9;
+}
+
+.about-second-content-img {    
+    aspect-ratio: 2/3;
+}
+
+.about-second-content img {    
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-second-content-link:nth-child(2) {
+    transform: translateY(1.5rem);
+}
+
+.about-second-content-title {
+    font-size: 2.1rem;
+    font-family: var(--font-title);
+    color: var(--color-blue);
+}
+
+.about-third-content {
+    padding: 5rem 5rem;
+    background-color: var(--color-sky-yellow);
+}
+
+.about-third-content p {
+    font-size: 2.4rem;
+    color: var(--color-blue);
+    font-family: var(--font-title);
+    margin-top: .8rem;
+    width: 55rem;
+}
+
+.about-fourth-content {
+    width: 100%;
+    padding: 6rem 5rem;
+}
+
+.about-fourth-bg {
+    background-image: linear-gradient(rgba(0,0,0,.3) 100% , transparent), url('https://chebararuba.com/wp-content/uploads/2024/01/che-bar-aruba1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    height: 29rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+}
+
+
+.about-fourth-content .title {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+}
+
+.about-fourth-content p {
+    font-size: 1.1rem;
+    font-family: var(--font-museo);
+    width: 48rem;
+}

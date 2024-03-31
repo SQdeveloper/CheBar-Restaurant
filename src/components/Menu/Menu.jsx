@@ -1,26 +1,26 @@
 import React from 'react';
-import './Menu.css';
 import { Link } from 'react-router-dom';
+import './Menu.css';
 
-const Menu = () => {
+const Menu = ({toggleMenu}) => {    
     return (
         <div className='menu'>
             <nav>
                 <ul>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/about'>About</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/about'>About</Link>
                     </li>
                     <li>
-                        <Link to='/ourmenu'>Our menu</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/ourmenu'>Our menu</Link>
                     </li>
                     <li>
-                        <Link to='/takeaway'>Take Away</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/takeaway'>Take Away</Link>
                     </li>
                     <li>
-                        <Link to='/contactus'>Contact Us</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/contactus'>Contact Us</Link>
                     </li>
                 </ul>
             </nav>

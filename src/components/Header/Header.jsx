@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
 
-    const openMenu = ()=>{
+    const toggleMenu = ()=>{
         //Activo la animacion para que las lineas formen una x
         const line = document.querySelectorAll('.header-main-btn-menu-line');
 
@@ -19,8 +19,8 @@ const Header = () => {
 
     return (
         <>
-        <Menu/> 
-        <button onClick={openMenu} className='header-main-btn-menu'>                
+        <Menu toggleMenu={toggleMenu}/> 
+        <button onClick={toggleMenu} className='header-main-btn-menu'>                
             <span className='header-main-btn-menu-line'></span>
             <span className='header-main-btn-menu-line'></span>                
         </button>
