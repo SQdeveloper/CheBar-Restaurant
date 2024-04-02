@@ -2,10 +2,10 @@ import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-const Render = ({child}) => {
+const Render = ({child, color}) => {
     return (
         <>
-            <Header/>
+            <Header color={`${color}`}/>
             {child}
             <Footer/>
         </>

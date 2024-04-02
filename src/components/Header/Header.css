@@ -46,6 +46,20 @@
     transition: filter .3s;
 }
 
+.header-main-redes img.black {
+    filter: none;
+    animation: changeColor 1.5s ease-out;    
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 250px;
+}
+
+@keyframes changeColor {
+    100% {
+        filter: invert(100%);
+    }
+}
+
 .header-main-btn-menu {
     position: fixed;
     top: 3.9rem;
@@ -65,6 +79,14 @@
     width: 1.9rem;
     background-color: white;
     transition: color .5s, transform .5s;
+}
+
+.header-main-btn-menu-line.black {
+    background-color: black;
+    animation: changeColor 1.5s ease-out;    
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 250px;
 }
 
 .header-main-btn-menu-line.active:nth-child(1) {

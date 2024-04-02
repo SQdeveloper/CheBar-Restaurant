@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div className='about'>
-            <SectionHero title={'About Us'} subtitle={'che bar'}/>
+            <SectionHero image={'https://chebararuba.com/wp-content/uploads/2024/01/che-bar-aruba5-1536x1024.jpeg'} title={'About Us'} subtitle={'che bar'}/>
             <section className="about-first-content">
                 <h2 className='title'>Welcome to Chebar, an Argentinean haven in the heart of Aruba!</h2>
                 <p>At Chebar, we bring the vibrant flavors of Argentina to the shores of Aruba, creating a one-of-a-kind culinary experience. Our restaurant bar is a welcoming space where you can savor delightful dishes in a cozy and lively atmosphere.</p>

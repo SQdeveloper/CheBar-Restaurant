@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import './Header.css';
 
-const Header = () => {
+const Header = ({color='white'}) => {
 
     const toggleMenu = ()=>{
         //Activo la animacion para que las lineas formen una x
@@ -21,17 +21,17 @@ const Header = () => {
         <>
         <Menu toggleMenu={toggleMenu}/> 
         <button onClick={toggleMenu} className='header-main-btn-menu'>                
-            <span className='header-main-btn-menu-line'></span>
-            <span className='header-main-btn-menu-line'></span>                
+            <span className={`header-main-btn-menu-line ${color}`}></span>
+            <span className={`header-main-btn-menu-line ${color}`}></span>                
         </button>
         <header className='header-main'>
             <Link to='/'><img className='header-main-logo' src="/images/logo/Logo.png" alt="logo" /></Link>
             <div className="header-main-redes">
                 <a href="">
-                    <img src="/images/redes/facebook.svg" alt="facebook" />                        
+                    <img className={`${color}`} src="/images/redes/facebook.svg" alt="facebook" />                        
                 </a>
                 <a href="">
-                    <img src="/images/redes/instagram.svg" alt="instagram" />
+                    <img className={`${color}`} src="/images/redes/instagram.svg" alt="instagram" />
                 </a>
             </div>
         </header>

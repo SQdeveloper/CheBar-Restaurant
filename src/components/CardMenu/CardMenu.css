@@ -4,6 +4,10 @@
     padding: 3rem 3rem;
 }
 
+.cardMenu.peach {
+    background-color: var(--color-peach);
+}
+
 .cardMenu-title {
     color: var(--color-mostasa);
     font-size: 3.2rem;

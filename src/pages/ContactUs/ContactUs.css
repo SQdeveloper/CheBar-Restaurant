@@ -1,0 +1,92 @@
+.contact {
+    background-color: var(--color-beige);
+    text-align: center;
+}
+
+.contact-question {
+    font-size: 2.5rem;    
+    text-align: center;
+    color: var(--color-blue);
+    margin: 5rem auto 2.5rem auto;
+    display: block;
+    width: fit-content;
+    padding: 0 1rem;
+}
+
+.contact-banner {
+    display: flex;
+    background-color: white;
+    margin: 0 6rem;
+}
+
+.contact-banner-image {
+    width: 40%;    
+}
+
+.contact-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-banner-info {
+    width: 60%;
+    padding: 3rem;
+    text-align: start;
+}
+
+.contact-banner-info > span {
+    font-family: var(--font-dancing);
+    font-size: 2.1rem;
+    font-weight: lighter;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact label {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 100%;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contact form .policy {
+    font-family: var(--font-museo);
+    display: flex;
+    gap: .5rem;
+}
+
+.contact form button {    
+    width: fit-content;
+    background-color: var(--color-blue);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: var(--font-museo);
+    font-size: 1rem;
+}
+
+.contact form .buttom {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.contact .map {
+    width: 100%;
+    margin-top: 6rem;
+}

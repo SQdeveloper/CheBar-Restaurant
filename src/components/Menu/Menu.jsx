@@ -14,13 +14,13 @@ const Menu = ({toggleMenu}) => {
                         <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/about'>About</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/ourmenu'>Our menu</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/menu'>Our menu</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/takeaway'>Take Away</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/take-away'>Take Away</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/contactus'>Contact Us</Link>
+                        <Link onClick={()=>{toggleMenu(); window.scrollTo(0,0)}} to='/contact-us'>Contact Us</Link>
                     </li>
                 </ul>
             </nav>

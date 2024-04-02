@@ -25,10 +25,10 @@ const GroupMenu = ({title, options})=>{
     )
 }
 
-const CardMenu = ({data}) => {    
+const CardMenu = ({data, bgColor=''}) => {    
 
     return (            
-        <section className='cardMenu'>
+        <section className={`cardMenu ${bgColor}`}>
             <h2 className='cardMenu-title'>{data.title}</h2>
             <span className="cardMenu-subtitle">{data.subtitle}</span>            
             <div className="cardMenu-content-groups">

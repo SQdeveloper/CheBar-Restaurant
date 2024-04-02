@@ -1,0 +1,42 @@
+.sliderMenu {
+    width: 100%;
+    padding: 5rem 7rem 3rem 7rem;    
+}
+
+.sliderMenu-buttons {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.sliderMenu-buttons button {
+    color: black;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.sliderMenu-buttons button.active {
+    background-color: var(--color-sky-blue);
+}
+
+.sliderMenu-box {
+    width: 100%;
+    display: none;
+}
+
+.sliderMenu-box.active {
+    animation: up .5s ease-out;
+    animation-fill-mode: both;
+    display: block;    
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: none;
+    }
+}

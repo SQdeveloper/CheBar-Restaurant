@@ -6,6 +6,8 @@
     padding: 0 5rem;
     height: 100svh;
     width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-hero .subtitle {
