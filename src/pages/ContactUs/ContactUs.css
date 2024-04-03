@@ -1,6 +1,5 @@
 .contact {
     background-color: var(--color-beige);
-    text-align: center;
 }
 
 .contact-question {
@@ -89,4 +88,46 @@
 .contact .map {
     width: 100%;
     margin-top: 6rem;
+}
+
+@media (max-width: 1024px) {
+    .contact-banner {
+        margin: 0 2rem;
+    }
+    .contact-banner-info {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-question.title {
+        font-size: 2rem;
+    }
+    .contact-banner-info > span{
+        font-size: 1.7rem;
+    }    
+    .contact-banner {
+        flex-direction: column;
+    }
+    .contact-banner-image {
+        height: 25rem;
+    }
+    .contact-banner-image, .contact-banner-info {
+        width: 100%;
+    }    
+    .contact textarea {
+        height: 7rem;
+    }    
+}
+
+@media (max-width: 425px) {
+    .contact-question.title {
+        margin-top: 4rem;
+    }
+    .contact-banner-image {
+        height: 22rem;
+    }
+    .contact .map {
+        margin-top: 4rem;
+    }
 }

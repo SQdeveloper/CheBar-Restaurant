@@ -10,3 +10,11 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 425px) {
+    .plate-animation {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 650/649;
+    }
+}

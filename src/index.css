@@ -23,6 +23,10 @@
   --font-dancing: "Dancing Script", cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
   width: 100%;
   min-height: 100vh;  
@@ -81,4 +85,8 @@ summary {
 
 .button-style:hover {
   background-color: var(--color-blue);
+}
+
+.inhabilitar {
+  overflow: hidden;
 }

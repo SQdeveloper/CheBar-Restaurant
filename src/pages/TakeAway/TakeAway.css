@@ -84,3 +84,49 @@
 .takeAWay-detail-image {
     margin-top: 6rem;
 }
+
+@media (max-width: 1024px) {
+    .takeAway .title {
+        font-size: 4.5rem;
+    }
+    .takeAway-banner {
+        height: 30rem;
+    }
+    .takeAway-subtitle {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+    }
+    .takeAway-paragraph {
+        font-size: 1.4rem;
+    }
+    .takeAWay-detail-image {
+        margin-top: 4rem;
+        height: 20rem;
+    }
+    .takeAway {
+        padding: 9rem 2rem 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .takeAway .title {
+        font-size: 3.2rem;
+    }
+    .takeAway-banner-info {
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .takeAway-banner {
+     height: auto;
+    }
+    .takeAway-banner-info div{
+        font-size: 1.2rem;
+    }
+    .takeAway-banner {
+        flex-direction: column;
+    }
+    .takeAway-banner-image {
+        width: 100%;
+        height: 20rem;
+    }
+}

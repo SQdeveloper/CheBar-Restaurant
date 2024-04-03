@@ -7,6 +7,7 @@
     display: flex;
     width: 100%;
     background-color: white;
+    flex-wrap: wrap;
 }
 
 .sliderMenu-buttons button {
@@ -15,6 +16,8 @@
     text-transform: uppercase;
     padding: 1.5rem;
     font-size: 1.5rem;
+    flex: 1;
+    text-wrap: nowrap;
 }
 
 .sliderMenu-buttons button.active {
@@ -38,5 +41,15 @@
     }
     100% {
         transform: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sliderMenu {
+        padding: 4rem 2rem 3rem 2rem;
+    }
+    .sliderMenu-buttons button {
+        font-size: 1.2rem;
+        padding: 1rem;
     }
 }

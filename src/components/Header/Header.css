@@ -98,3 +98,20 @@
     transform: rotate(-45deg) translateY(-0.28rem);
     background-color: rgb(173, 173, 173);    
 }
+
+@media (max-width: 768px) {
+    .header-main-redes {
+        display: none;
+    }
+
+    .header-main-btn-menu {
+        left: calc(90%);        
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-main {
+        padding: 0 1.4rem;
+    }
+}

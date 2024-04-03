@@ -2,6 +2,7 @@
     background-color: var(--color-peach);
     text-align: center;
     padding-top: 8rem;
+    overflow: hidden;
 }
 
 .ourmenu .title {
@@ -16,4 +17,20 @@
     margin: 0 auto;
     margin-top: 1rem;
     line-height: 1.7rem;
+}
+
+@media (max-width: 1024px) {
+    .ourmenu .title {
+        font-size: 4.2rem;
+    }
+    .ourmenu > p {
+        width: 100%;
+        padding: 0 2rem;
+    }    
+}
+
+@media (max-width: 425px) {
+    .ourmenu .title {
+        font-size: 3rem;
+    }
 }

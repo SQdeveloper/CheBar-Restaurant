@@ -65,3 +65,16 @@
     text-align: end;
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+    .swiper-bottom {
+        height: 40rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .swiper-button-prev, .swiper-button-next {
+        top: 94%;
+    }
+}

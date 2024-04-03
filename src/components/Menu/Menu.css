@@ -9,7 +9,7 @@
     width: 100%;
     height: 100svh;
     padding: 1rem 3rem;
-    background-color: rgb(33,33,33);
+    background-color: #202020;
     background-image: url('/images/bg/bg-ornament.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;    
@@ -213,4 +213,23 @@ div.menu-footer-redes {
 
 .menu-footer-redes a:hover > img {
     filter: invert(79%) sepia(33%) saturate(246%) hue-rotate(138deg) brightness(86%) contrast(87%);
+}
+
+@media (max-width: 1024px) {
+    .menu-logotipo {
+        display: none;
+    }
+    
+    .menu {
+        align-items: center;
+    }
+    .menu ul li a{        
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-footer {
+        padding: 0 1rem;
+    }    
 }

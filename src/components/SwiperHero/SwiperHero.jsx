@@ -5,17 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './SwiperHero.css';
 import SwiperBoxHero from '../SwiperBoxHero/SwiperBoxHero';
-import SpinnerLoad from '../SpinnerLoad/SpinnerLoad';
 
-const SwiperHero = () => {
-    // useEffect(()=>{
-    //     gsap.to('.char', {
-    //         y: 0,                
-    //         stagger: 0.05,
-    //         delay: 0.2,
-    //         duration: .1                           
-    //     });
-    // },[]);        
+const SwiperHero = () => {    
 
     const infoList = [
         {
@@ -37,11 +28,7 @@ const SwiperHero = () => {
                 <SwiperSlide key={index}>
                     <SwiperBoxHero image={info.image} titlePart1={info.titlePart1} titlePart2={info.titlePart2} />
                 </SwiperSlide>
-            ))} 
-            {/* <div className="swiperHero-spinners">
-                <SpinnerLoad/>                       
-                <SpinnerLoad/>                       
-            </div> */}
+            ))}             
         </Swiper>
         </>
     );

@@ -6,6 +6,9 @@ import './Header.css';
 const Header = ({color='white'}) => {
 
     const toggleMenu = ()=>{
+
+        document.body.classList.toggle('inhabilitar');
+
         //Activo la animacion para que las lineas formen una x
         const line = document.querySelectorAll('.header-main-btn-menu-line');
 

@@ -45,3 +45,25 @@
     align-items: center;
     gap: .5rem;
 }
+
+@media (max-width: 1024px) {
+    .swiperBoxHero-title {
+        font-size: 4.5rem;
+    }
+    .swiperBoxHero {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiperBoxHero-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 425px) {    
+    .swiperBoxHero-title {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+}

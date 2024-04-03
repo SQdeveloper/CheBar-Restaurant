@@ -20,3 +20,18 @@
     margin-top: .5rem;
     text-transform: capitalize;
 }
+
+@media (max-width: 1024px) {
+    .section-hero-title.title {
+        font-size: 4rem;
+    }    
+}
+
+@media (max-width: 768px) {
+    .section-hero {
+        padding: 0 2rem;        
+        padding-top: 3rem;
+    }
+    .section-hero-title.title {
+        font-size: 3.5rem;    }
+}

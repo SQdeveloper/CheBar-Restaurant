@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,14 +19,30 @@ const Box = ({title,url})=>{
 }
 
 const SliderBottom = () => {
+    const [views, setViews] = useState(4);
+    const [space, setSpace] = useState(0);
+
+    useEffect(()=>{        
+        if(window.innerWidth > 1024) {
+            setViews(4);
+        }
+        else if(window.innerWidth <= 1024 && window.innerWidth > 768) {
+            setViews(3);
+        }
+        else if(window.innerWidth <= 768) {
+            setViews(1);
+            setSpace(30);
+        }
+    },[])
+    
     return (                
         <Swiper
-            slidesPerView={4}
-            spaceBetween={0}            
-            navigation={true}
-            pagination={{type: 'fraction'}}
-            modules={[Pagination, Navigation]}
-            className="swiper-bottom"
+        slidesPerView={views}
+        spaceBetween={space}            
+        navigation={true}
+        pagination={{type: 'fraction'}}
+        modules={[Pagination, Navigation]}
+        className="swiper-bottom"            
         >
             <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Che-Bar-1-768x768.jpeg' title='Drinks'/></SwiperSlide>
             <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Menu-768x768.jpeg' title='Where we are?'/></SwiperSlide>

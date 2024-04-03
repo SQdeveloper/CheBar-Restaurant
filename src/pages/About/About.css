@@ -93,7 +93,6 @@
     padding: 1.5rem;
 }
 
-
 .about-fourth-content .title {
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -104,4 +103,69 @@
     font-size: 1.1rem;
     font-family: var(--font-museo);
     width: 48rem;
+}
+
+
+@media (max-width: 1024px) {
+    .about-first-content .title {
+        font-size: 2.7rem;
+    }
+    .about-second-content-title {
+        font-size: 1.8rem;
+    }
+    .about-third-content p {
+        font-size: 1.7rem;
+        width: 100%;        
+    }
+    .about-third-content {
+        padding: 4rem 5rem;
+    }
+    .about-fourth-content {
+        padding: 4rem 5rem;
+    }
+    .about-fourth-content p {
+        width: 100%;        
+    }
+}
+
+@media (max-width: 768px) {
+    .about-first-content .title {
+        font-size: 2.2rem;
+    }
+    .about-first-content {
+        padding: 5rem 2rem;
+        margin: 0 2rem;
+        gap: 1.2rem;
+    }
+    .about-first-content p {
+        font-size: 1.2rem;
+    }
+    .about-second-content {
+        padding: 4rem 2rem;
+        gap: 2rem;
+    }
+    .about-fourth-bg {
+        height: 25rem;
+    }
+    .about-fourth-content .title {
+        font-size: 2.4rem;
+    }
+    .about-fourth-content p {
+        font-size: 1.1rem;
+    }
+    .about-fourth-content {
+        padding: 3rem 2rem;
+    }
+    .about-third-content {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-second-content {
+        flex-direction: column;
+    }
+    .about-second-content-link:nth-child(2) {
+        transform: none;
+    }
 }

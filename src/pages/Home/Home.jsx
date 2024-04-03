@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className='home'>        
           <SwiperHero/>     
-          <div className="home-info">
+          <div id='home-info' className="home-info">
             <section className="home-info-content">
               <span className='subtitle'>about che bar</span>  
               <h2 className='home-info-title title'>Che Bar — Where the flavor of Buenos Aires meets the attitude of the Caribbean!</h2>
