@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionHero from '../../components/SectionHero/SectionHero';
-import './About.css';
 import { Link } from 'react-router-dom';
+import './About.css';
 
 const About = () => {
     return (
@@ -13,19 +13,19 @@ const About = () => {
                 <p>From the moment you step inside, you’ll be embraced by the warmth of Argentine hospitality. Our dedicated team is committed to providing exceptional service, making your visit a memorable and enjoyable experience.</p>
             </section>
             <div className="about-second-content">
-                <Link className='about-second-content-link' to='/ourmenu'>
+                <Link onClick={()=>{scrollTo(0,0)}} to='/menu' className='about-second-content-link'>
                     <div className="about-second-content-img">
                         <img src="https://chebararuba.com/wp-content/uploads/2024/01/DRINKS-IN-ARUBA.jpeg" alt="food" />
                     </div>
                     <span className='about-second-content-title'>Cocktail</span>
                 </Link>
-                <Link className='about-second-content-link' to='/ourmenu'>
+                <Link onClick={()=>{scrollTo(0,0)}} to='/menu' className='about-second-content-link'>
                     <div className="about-second-content-img">  
                         <img src="https://chebararuba.com/wp-content/uploads/2023/12/PRODUCT-CHE-BAR-2-768x1152.jpg" alt="food" />
                     </div>
                     <span className='about-second-content-title'>Lunch & Dinner</span>
                 </Link>
-                <Link className='about-second-content-link' to='/ourmenu'>
+                <Link onClick={()=>{scrollTo(0,0)}} to='/menu' className='about-second-content-link'>
                     <div className="about-second-content-img">
                         <img src="https://chebararuba.com/wp-content/uploads/2024/01/CHEBAR-ARGENTINA-768x1152.jpeg" alt="food" />
                     </div>

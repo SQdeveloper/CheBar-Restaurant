@@ -49,3 +49,13 @@
         left: 2rem;
     }
 }
+
+@media (max-width: 425px) {
+    .mySwiper .swiper-button-next {
+        left: 5rem;
+    }
+    
+    .mySwiper .swiper-button-prev {
+        left: 1.5rem;
+    }
+}

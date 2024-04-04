@@ -5,16 +5,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import './SliderBottom.css';
+import { Link } from 'react-router-dom';
 
-const Box = ({title,url})=>{
+const Box = ({title,url, redirection})=>{
     return(
-        <div className='swiper-bottom-box'>
+        <Link onClick={()=>{scrollTo(0,0)}} to={`/${redirection}`} className='swiper-bottom-box'>
             <img src={url} alt="bg" />
             <div className="swiper-bottom-box-secondary">
                 {title}
                 <img src="/images/chevron-right.svg" alt="" />
             </div>
-        </div>
+        </Link>
     )
 }
 
@@ -44,11 +45,11 @@ const SliderBottom = () => {
         modules={[Pagination, Navigation]}
         className="swiper-bottom"            
         >
-            <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Che-Bar-1-768x768.jpeg' title='Drinks'/></SwiperSlide>
-            <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Menu-768x768.jpeg' title='Where we are?'/></SwiperSlide>
-            <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Chebar.jpeg' title='About Us'/></SwiperSlide>
-            <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/B-768x768.jpeg' title='BreakFast'/></SwiperSlide>
-            <SwiperSlide><Box url='https://chebararuba.com/wp-content/uploads/2024/01/Empanadas-Argentinas-768x768.jpeg' title='Dinner'/></SwiperSlide>                    
+            <SwiperSlide><Box redirection='contact-us' url='https://chebararuba.com/wp-content/uploads/2024/01/Che-Bar-1-768x768.jpeg' title='Where we are?'/></SwiperSlide>
+            <SwiperSlide><Box redirection='menu' url='https://chebararuba.com/wp-content/uploads/2024/01/Menu-768x768.jpeg' title='Drinks'/></SwiperSlide>
+            <SwiperSlide><Box redirection='about' url='https://chebararuba.com/wp-content/uploads/2024/01/Chebar.jpeg' title='About Us'/></SwiperSlide>
+            <SwiperSlide><Box redirection='menu' url='https://chebararuba.com/wp-content/uploads/2024/01/B-768x768.jpeg' title='BreakFast'/></SwiperSlide>
+            <SwiperSlide><Box redirection='menu' url='https://chebararuba.com/wp-content/uploads/2024/01/Empanadas-Argentinas-768x768.jpeg' title='Dinner'/></SwiperSlide>                    
         </Swiper>
     );
 };

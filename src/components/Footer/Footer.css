@@ -213,4 +213,8 @@
     .footer-top-direction-title.title {
         font-size: 1.8rem;
     }
+
+    .footer-content {
+        padding: 4rem 1.5rem;
+    }
 }

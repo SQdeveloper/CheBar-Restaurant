@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import CardMenu from '../CardMenu/CardMenu';
 import data from '../../DB/data';
 import './SliderMenu.css';
 
-const SliderMenu = () => {
-    useEffect(()=>{
-        
-    }, []);
-
+const SliderMenu = () => {    
     const handleEvent = (index)=>{
         const boxs = document.querySelectorAll('.sliderMenu-box');
         const targetBox =  boxs[index];

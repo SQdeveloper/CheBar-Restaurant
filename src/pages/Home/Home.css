@@ -120,20 +120,20 @@
     display: none;
 }
 
-.home-ourmenu > button:nth-child(4) {
+.ourmenu-button:nth-child(4) {
     margin-top: 2rem;
 }
 
-.home-ourmenu > button:nth-child(5) {
+.ourmenu-button:nth-child(5) {
     margin-top: 1.5rem;
 }
 
-.home-ourmenu > button {
+.ourmenu-button {
     font-size: 1rem;
     font-weight: 400;
 }
 
-.home-ourmenu > button:nth-child(5) svg {
+.ourmenu-button:nth-child(5) svg {
     width: 18px;
     height: 18px;
     filter: invert(100%);
@@ -199,9 +199,9 @@
 }
 
 .home-vibes img {
-    width: 100%;
-    height: 100%;
+    width: 30rem;
     object-fit: cover;
+    aspect-ratio: 595/604;
 }
 
 /* HOME MAP */
@@ -250,6 +250,9 @@
 
 @media (max-width: 425px) {
     /* HOME-INFO */
+    .home-info {
+        padding: 4.5rem 1.5rem;
+    }
     .home-info .title {
         font-size: 2.2rem;
     }
@@ -259,12 +262,16 @@
     }
 
     /* HOME-OURMENU */
+    .home-ourmenu {
+        padding: 3rem 1.5rem;
+    }
     .home-ourmenu-title {
         font-size: 3.1rem;
     }    
     
     .home-ourmenu summary {
         font-size: 1.4rem;;
+        padding: 1.3rem .7rem;
     }    
 
     /* HOME-CONTENTSWIPER */

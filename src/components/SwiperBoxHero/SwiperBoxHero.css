@@ -66,4 +66,7 @@
         font-size: 3rem;
         line-height: 3.6rem;
     }
+    .swiperBoxHero {
+        padding: 1rem 1.5rem;
+    }
 }
